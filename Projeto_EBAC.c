@@ -146,7 +146,8 @@ int main() //Página do "Menu"
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf("\t1 - Cadastrar\n");
 		printf("\t2 - Consultar\n");
-		printf("\t3 - Excluir\n\n");
+		printf("\t3 - Excluir\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: "); //Final do menu
 		
 		scanf("%d", &opcao); //Armazenando a escolha do usuário
@@ -165,6 +166,11 @@ int main() //Página do "Menu"
 		
 			case 3: //Se o usuário digitar "3", irá para a página indicada na linha abaixo
 			deletar();
+			break;
+			
+			case 4: //Se o usuário digitar "4", o sistema fechará
+			printf("Obrigado por utilizar o sistema.\n\n");
+			return 0;
 			break;
 		
 			default:
